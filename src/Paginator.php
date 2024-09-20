@@ -102,11 +102,11 @@ class Paginator
      * @param bool $fixedFirstAndLastPage
      * @return null|string
      */
-    public function render(bool $fixedFirstAndLastPage = true): ?string
+    public function render(string $class = "justify-content-center", bool $fixedFirstAndLastPage = true): ?string
     {
         if ($this->rows > $this->limit):
             $paginator = "<nav>";
-            $paginator = "<ul class=\"pagination\">";
+            $paginator = "<ul class=\"pagination {$class}\">";
             $paginator .= $this->firstPage($fixedFirstAndLastPage);
             $paginator .= $this->beforePages();
             $paginator .= "<li class=\"page-item active\"><a class=\"page-link \">{$this->page}</a></li>";
