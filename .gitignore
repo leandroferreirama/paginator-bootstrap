@@ -1,0 +1,11 @@
+#ignorar arquivos de processamento do servidor
+*.lockfile
+*.log
+/vendor/
+/tests/
+.phpunit.result.cache
+phpunit.xml
+.idea
+.env
+composer.lock
+docker-compose.yml

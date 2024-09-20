@@ -1,0 +1,19 @@
+{
+    "name": "leandroferreirama/paginator-composer",
+   "license": "MIT",
+    "authors": [
+      {
+        "name": "LEandro Ferreira Marcelli",
+        "email": "suporte@integracaosistema.com.br",
+        "role": "Developer"
+      }
+    ],
+    "require": {
+      "php": ">=8.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Leandroferreirama\\Paginator\\": "src"
+      }
+    }
+  }
